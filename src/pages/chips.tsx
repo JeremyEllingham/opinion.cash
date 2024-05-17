@@ -1,6 +1,8 @@
+import "../app/globals.css";
 import Reputation from "@/components/Reputation"
 import Table from "@/components/Table"
 import TestTable from "@/components/TestTable"
+import Header from "@/components/Header"
 
 import { useState, useEffect } from "react"
 
@@ -9,7 +11,7 @@ const defaultState = {
     { id: 1, name: 'jeremy', reputation: 10 },
     { id: 2, name: 'emergent', reputation: 10 }
   ],
-  links: [ { from: 1, to: 2, share: 0.3 }]
+  links: [{ from: 1, to: 2, share: 0.3 }]
 }
 
 export default function CHIPs() {
@@ -42,11 +44,13 @@ export default function CHIPs() {
     // setCurrentState(newState)
   }
 
-  return <div><div>CHIPs</div>
-  <Table />
-  <hr />
-  <TestTable />
-  <Reputation />
-  {JSON.stringify(currentState)}
-  </div>
+  return <div className="bg-white">
+    <Header />
+    <p>XXXX</p>
+    <Table />
+    <hr />
+    {/* <TestTable />
+      <Reputation />
+      {JSON.stringify(currentState)} */}
+  </div >
 }
