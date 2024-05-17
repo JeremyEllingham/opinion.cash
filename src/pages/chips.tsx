@@ -1,6 +1,6 @@
-import Reputation from "@/app/components/Reputation"
-import Table from "@/app/components/Table"
-import TestTable from "@/app/components/TestTable"
+import Reputation from "@/components/Reputation"
+import Table from "@/components/Table"
+import TestTable from "@/components/TestTable"
 
 import { useState, useEffect } from "react"
 
